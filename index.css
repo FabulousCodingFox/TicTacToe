@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --cell-width: 12em
+}
+
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tictactoe{
+    border: 1px solid dimgray;
+    border-collapse: collapse;
+}
+
+#tictactoe td{
+    border: 1px solid dimgray;
+    width: var(--cell-width);
+    height: var(--cell-width);
+}
+
+#tictactoe td > p{
+    text-align: center;
+    font-size: calc(var(--cell-width) * 0.75);
+    margin: 0px;
+    padding: 0px;
+}
+
+#tictactoe button{
+    visibility: hidden;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
