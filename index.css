@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Permanent Marker', cursive;
 }
 
-:root{
+:root {
     --cell-width: 12em
 }
 
-body{
+body {
     margin: 0px;
     background-color: whitesmoke;
     width: 100%;
@@ -20,16 +20,16 @@ body{
     overflow: hidden;
 }
 
-#tictactoe{
+#tictactoe {
     border-collapse: collapse;
 }
 
-.slideOut{
+.slideOut {
     transform: translateY(100vh);
     animation: slideOut 0.5s ease-in-out;
 }
 
-#tictactoe td{
+#tictactoe td {
     border: 15px solid #aaa;
     width: var(--cell-width);
     height: var(--cell-width);
@@ -37,7 +37,7 @@ body{
     text-align: center;
 }
 
-#tictactoe td > p{
+#tictactoe td>p {
     color: var(--color);
     padding: 0;
     font-size: calc(var(--cell-width) * 0.6);
@@ -46,24 +46,34 @@ body{
     animation: fadeIn 0.2s ease-in-out;
 }
 
-@keyframes fadeIn{
-    0% {opacity: 0;}
-    100%{opacity: 100;}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
 }
 
-@keyframes slideOut{
-    0% {transform: translateY(0vh);}
-    100%{transform: translateY(100vh);}
+@keyframes slideOut {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
 }
 
-#tictactoe button{
+#tictactoe button {
     visibility: hidden;
     border: none;
     width: 100%;
     height: 100%;
 }
 
-.win{
+.win {
     width: 100%;
     text-align: center;
     font-size: 6em;
